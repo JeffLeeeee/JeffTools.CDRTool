@@ -34,15 +34,19 @@
                     <Border Padding="{TemplateBinding Padding}">
                         <Grid
                             Height="30"
-                            Background="Transparent"
+                            Background="#2563B3"
                             SnapsToDevicePixels="False">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="24" />
                                 <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="24" />
                             </Grid.ColumnDefinitions>
                             <TextBlock
-                                HorizontalAlignment="Center"
+                                Grid.Column="2"
+                                HorizontalAlignment="Right"
                                 VerticalAlignment="Center"
+                                Text=">"
+                                Margin="0,0,10,0"
                                 FontFamily="{StaticResource IconFont}"
                                 FontSize="20" />
                             <ContentPresenter

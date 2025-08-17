@@ -102,19 +102,20 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Corel.Interop.CorelDRAW, Version=19.0.0.328, Culture=neutral, PublicKeyToken=e4835428e22ad6f9, processorArchitecture=MSIL">
+    <Reference Include="Corel.Interop.CorelDRAW, Version=22.0.0.412, Culture=neutral, PublicKeyToken=e4835428e22ad6f9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
-      <HintPath>C:\Program Files\Corel\CorelDRAW Graphics Suite 2017\Programs64\Assemblies\Corel.Interop.CorelDRAW.dll</HintPath>
+      <HintPath>C:\Program Files\Corel\CorelDRAW Graphics Suite 2022\Programs64\Assemblies\Corel.Interop.CorelDRAW.dll</HintPath>
     </Reference>
-    <Reference Include="Corel.Interop.VGCore, Version=19.0.0.328, Culture=neutral, PublicKeyToken=e4835428e22ad6f9, processorArchitecture=MSIL">
+    <Reference Include="Corel.Interop.VGCore, Version=22.0.0.412, Culture=neutral, PublicKeyToken=e4835428e22ad6f9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
-      <HintPath>C:\Program Files\Corel\CorelDRAW Graphics Suite 2017\Programs64\Assemblies\Corel.Interop.VGCore.dll</HintPath>
+      <HintPath>C:\Program Files\Corel\CorelDRAW Graphics Suite 2022\Programs64\Assemblies\Corel.Interop.VGCore.dll</HintPath>
     </Reference>
     <Reference Include="ExCSS, Version=4.2.3.0, Culture=neutral, PublicKeyToken=bdbe16be9b936b9a, processorArchitecture=MSIL">
       <HintPath>packages\ExCSS.4.2.3\lib\netstandard2.0\ExCSS.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationFramework.Aero2" />
     <Reference Include="Svg, Version=3.4.0.0, Culture=neutral, PublicKeyToken=12a0bac221edeae2, processorArchitecture=MSIL">
       <HintPath>packages\Svg.3.4.7\lib\net472\Svg.dll</HintPath>
     </Reference>
@@ -160,7 +161,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Common\Helper\CDRHelper.cs" />
     <Compile Include="Common\Helper\ConfigHelper.cs" />
+    <Compile Include="Common\Helper\CreateImageShapeHelper.cs" />
+    <Compile Include="Common\Helper\CreateShapeHelper.cs" />
     <Compile Include="Common\MVVM\ObservableObject.cs" />
     <Compile Include="Common\MVVM\RelayCommand.cs" />
     <Compile Include="Common\ShapeTypeEnums.cs" />
@@ -182,6 +186,10 @@
     <Page Include="Styles\ColorRadioButton.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\ComboBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Styles\Expander.xaml">
       <SubType>Designer</SubType>
@@ -240,6 +248,10 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files\Corel\CorelDRAW Graphics Suite 2020\Programs64\Assemblies\Corel.Interop.CorelDRAW.dll" />
+    <Analyzer Include="C:\Program Files\Corel\CorelDRAW Graphics Suite 2020\Programs64\Assemblies\Corel.Interop.VGCore.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

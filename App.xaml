@@ -13,6 +13,7 @@
                 <ResourceDictionary x:Name="ToggleButtonStyle" Source="Styles/ToggleButton.xaml" />
                 <ResourceDictionary x:Name="ColorRadioButtonStyle" Source="/Styles/ColorRadioButton.xaml" />
                 <ResourceDictionary x:Name="ExpanderStyle" Source="/Styles/Expander.xaml" />
+                <ResourceDictionary x:Name="ComboBoxStyle" Source="/Styles/ComboBox.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

@@ -30,11 +30,12 @@
                             Grid.Row="0"
                             Background="{TemplateBinding Background}"
                             BorderBrush="{TemplateBinding BorderBrush}"
-                            BorderThickness="0,0,0,2">
+                            BorderThickness="0,0,0,2"
+                            CornerRadius="5,5,0,0">
                             <ContentPresenter
                                 x:Name="ContentSite"
                                 Margin="8,4"
-                                HorizontalAlignment="Right"
+                                HorizontalAlignment="Center"
                                 VerticalAlignment="Center"
                                 ContentSource="Header" />
                         </Border>
@@ -43,10 +44,12 @@
                         <Trigger Property="IsSelected" Value="True">
                             <Setter TargetName="Bd" Property="BorderBrush" Value="#2563B3" />
                             <Setter Property="Foreground" Value="#2563B3" />
+                            <Setter Property="Background" Value="#332563B3" />
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="True">
                             <Setter Property="Foreground" Value="#2563B3" />
                             <Setter TargetName="Bd" Property="BorderBrush" Value="#2563B3" />
+                            <Setter Property="Background" Value="#332563B3" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>

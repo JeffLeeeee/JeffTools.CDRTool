@@ -50,6 +50,10 @@ namespace JeffTools.CDRTool.Common.Helpers
             if(GetTempPath()=="")
             {
                 TempPath = Path.Combine(Path.GetTempPath(), "JeffTools-CDRTool");
+                if(!Directory.Exists(TempPath))
+                {
+                    Directory.CreateDirectory(TempPath);
+                }
                 if (!Directory.Exists(ConfigFilePath))
                 {
                     using (FileStream configFile = File.Create(ConfigFilePath)){

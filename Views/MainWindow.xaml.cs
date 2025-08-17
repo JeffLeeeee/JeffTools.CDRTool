@@ -45,9 +45,5 @@ namespace JeffTools.CDRTool.Views
             DragMove();
         }
 
-        private void Button_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
-        {
-
-        }
     }
 }
